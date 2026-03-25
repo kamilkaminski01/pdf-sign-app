@@ -1,0 +1,11 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-lg;
+
+  &__divider {
+    height: 1px;
+    background: $color-gray-200;
+    margin: $spacing-sm 0;
+  }
+}

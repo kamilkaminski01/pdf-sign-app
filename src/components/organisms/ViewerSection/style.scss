@@ -1,0 +1,40 @@
+.viewer-section {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+
+  &--disabled {
+    opacity: 0.5;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: $radius-full;
+    background: $color-primary;
+    color: $color-white;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    flex-shrink: 0;
+
+    &--inactive {
+      background: $color-gray-300;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-sm;
+    animation: fadeIn 0.3s ease;
+  }
+}

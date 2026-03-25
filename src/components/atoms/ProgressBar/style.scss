@@ -1,0 +1,26 @@
+.progress-bar {
+  width: 100%;
+
+  &__track {
+    width: 100%;
+    height: 8px;
+    background: $color-gray-200;
+    border-radius: $radius-full;
+    overflow: hidden;
+  }
+
+  &__fill {
+    height: 100%;
+    background: linear-gradient(90deg, $color-primary, #818cf8);
+    border-radius: $radius-full;
+    transition: width 0.4s ease;
+  }
+
+  &__label {
+    display: block;
+    margin-top: $spacing-xs;
+    font-size: $font-size-xs;
+    color: $color-gray-500;
+    text-align: center;
+  }
+}

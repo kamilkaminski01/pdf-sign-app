@@ -1,0 +1,43 @@
+.upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-md;
+  padding: $spacing-2xl $spacing-xl;
+  border: 2px dashed $color-gray-300;
+  border-radius: $radius-xl;
+  background: $color-white;
+  transition: all $transition-base;
+  text-align: center;
+
+  &:hover:not(.upload-area--disabled) {
+    border-color: $color-primary;
+    background: $color-primary-light;
+  }
+
+  &--drag-over {
+    border-color: $color-primary;
+    background: $color-primary-light;
+    transform: scale(1.02);
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: $radius-full;
+    background: $color-primary-light;
+    color: $color-primary;
+  }
+
+  @media (max-width: $bp-sm) {
+    padding: $spacing-xl $spacing-md;
+  }
+}

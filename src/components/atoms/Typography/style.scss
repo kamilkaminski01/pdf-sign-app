@@ -1,0 +1,63 @@
+.typo {
+  &--h1 {
+    font-size: $font-size-3xl;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+
+    @media (max-width: $bp-sm) {
+      font-size: $font-size-2xl;
+    }
+  }
+
+  &--h2 {
+    font-size: $font-size-2xl;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  &--h3 {
+    font-size: $font-size-xl;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  &--body {
+    font-size: $font-size-base;
+    line-height: 1.6;
+  }
+
+  &--small {
+    font-size: $font-size-sm;
+    line-height: 1.5;
+  }
+
+  &--caption {
+    font-size: $font-size-xs;
+    line-height: 1.4;
+  }
+
+  &--muted {
+    color: $color-gray-500;
+  }
+
+  &--primary {
+    color: $color-primary;
+  }
+
+  &--success {
+    color: $color-success;
+  }
+
+  &--error {
+    color: $color-error;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}

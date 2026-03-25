@@ -1,0 +1,50 @@
+.pdf-viewer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-gray-200;
+  border-radius: $radius-lg;
+  overflow: hidden;
+  background: $color-gray-100;
+
+  &__toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-sm $spacing-md;
+    background: $color-white;
+    border-bottom: 1px solid $color-gray-200;
+    flex-wrap: wrap;
+    gap: $spacing-sm;
+  }
+
+  &__nav,
+  &__zoom {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xs;
+  }
+
+  &__canvas-wrap {
+    overflow: auto;
+    padding: $spacing-md;
+    display: flex;
+    justify-content: center;
+    max-height: 60vh;
+    -webkit-overflow-scrolling: touch;
+
+    @media (max-width: $bp-sm) {
+      max-height: 50vh;
+    }
+  }
+
+  &__canvas {
+    display: block;
+    box-shadow: $shadow-lg;
+    background: $color-white;
+  }
+
+  &__error {
+    padding: $spacing-xl;
+    text-align: center;
+  }
+}
